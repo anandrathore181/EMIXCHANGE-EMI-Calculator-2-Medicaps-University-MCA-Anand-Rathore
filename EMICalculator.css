@@ -1,0 +1,117 @@
+
+body
+  {
+    background: white;
+  }
+  h1
+  {
+    font-size: 45px;
+    text-align: center;
+    color: #b21111;
+  }
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  
+  width: 100%;
+  height: 25px;
+  background: #eb0000;
+  outline: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(20, 19, 19);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #000000;
+  cursor: pointer;
+}
+input[type="range"] { 
+    margin: auto;
+    
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0; /* iOS */
+}
+
+::-webkit-slider-runnable-track {
+    background: rgb(168, 253, 253);
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+    
+    width: 20px; /* 1 */
+    height: 40px;
+    background: rgb(244, 12, 12);
+    box-shadow: -100vw 0 0 100vw rgb(21, 94, 242);
+    border: 2px solid rgb(248, 9, 9); /* 1 */
+}
+
+::-moz-range-track {
+    height: 40px;
+    background: rgb(11, 3, 3);
+}
+
+::-moz-range-thumb {
+    background: #fff;
+    height: 40px;
+    width: 20px;
+    border: 3px solid #999;
+    border-radius: 0 !important;
+    box-shadow: -100vw 0 0 100vw rgb(0, 4, 8);
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: rgb(240, 4, 4);
+}
+
+::-ms-thumb { 
+    background: rgb(21, 2, 2);
+    border: 2px solid rgb(249, 0, 0);
+    height: 40px;
+    width: 20px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: rgb(209, 180, 16);
+    color: transparent;
+    height: 40px;
+    border: none;
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+  
+
